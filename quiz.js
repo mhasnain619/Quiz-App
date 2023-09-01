@@ -226,7 +226,7 @@ nextQuestion.addEventListener("click", function (event) {
 
         }
         if (indexValue == quizQuestions.length) {
-            alert("this is last Questiomn")
+            alert("This is last Question")
             window.location.href = "result.html"
         } else {
             renderQuestion();
