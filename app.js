@@ -23,7 +23,6 @@ function getInputValue(inputId) {
 document.getElementById("form").addEventListener("submit", function (event) {
     event.preventDefault();
 
-
     var Email = getInputValue("email")
     var Password = getInputValue("password")
 
@@ -38,7 +37,11 @@ document.getElementById("form").addEventListener("submit", function (event) {
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            console.log(errorMessage);
+            alert(error.message)
         });
+
+
+
+
 })
 
