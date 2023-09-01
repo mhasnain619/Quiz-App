@@ -1,0 +1,328 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+
+.letsStart {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid; */
+    height: 100vh;
+}
+
+.startBtn {
+    outline: none;
+    border: none;
+    height: 2em;
+    width: 80px;
+    background-color: #61677A;
+    border-radius: 5px;
+}
+
+.letsStartContainer {
+    font-family: "arial";
+    font-size: 24px;
+    display: grid;
+    place-items: center;
+    width: 350px;
+}
+
+.typed {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    text-align: center;
+    animation: typing;
+    animation-duration: 2.5s;
+    animation-timing-function: steps(25, end);
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 50
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightgray;
+    width: 100%;
+}
+
+.second-main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.questionAndanswer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 80vh; */
+    width: 50%;
+    background-color: #FFF6E0;
+    border-radius: 10px 10px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.question {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    height: 3rem;
+    color: white;
+    word-wrap: wrap;
+
+}
+
+.AnswerBox {
+    min-width: 300px;
+    /* height: 80vh; */
+}
+
+.opt-1-2 {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.opt-3-4 {
+    display: flex;
+    width: 100;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 280px;
+    height: 3em;
+    padding: 10px 30px;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+}
+
+/* .c :hover {
+    background-color: rgb(226, 24, 24);
+    border-color: 2px solid gray;
+} */
+
+.option>p,
+.question>p {
+    color: white;
+}
+
+.next-button {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0px;
+}
+
+.next-button>button {
+    padding: 8px 120px;
+    background-color: #61677A;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+p {
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .questionAndanswer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .next-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px 0px;
+    }
+
+    .next-button>button {
+        padding: 10px 50px;
+        background-color: #61677A;
+        border-radius: 5px;
+        color: white;
+        border: none;
+    }
+
+    .opt-1-2 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 50px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .opt-3-4 {
+        display: flex;
+        flex-direction: column;
+        width: 100;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .second-main-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .c {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 100px;
+        border-radius: 10px;
+        word-wrap: break-word;
+        margin-bottom: 20px;
+        cursor: pointer;
+        min-width: 300px;
+        height: 3em;
+        padding: 10px 30px;
+        overflow: hidden;
+        color: rgb(255, 255, 255);
+    }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .AnswerBox {
+        min-width: 250px;
+    }
+
+    .c {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 100px;
+        border-radius: 10px;
+        word-wrap: break-word;
+        margin-bottom: 20px;
+        cursor: pointer;
+        width: 225px;
+        /* min-width: 100px; */
+        height: 3em;
+        padding: 10px 0px;
+        overflow: hidden;
+        color: rgb(255, 255, 255);
+    }
+
+    .next-button>button {
+        padding: 10px 96px;
+        background-color: #61677A;
+        border-radius: 5px;
+        color: white;
+        border: none;
+    }
+
+    .opt-1-2 {
+        display: flex;
+        width: 100%;
+        margin-top: 40px;
+        align-items: center;
+        gap: 6px;
+        justify-content: space-around;
+    }
+
+    .opt-3-4 {
+        display: flex;
+        width: 100;
+        /* padding: 0px 8px; */
+        gap: 6px;
+
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .question {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        background-color: black;
+        width: 100%;
+        font-size: xx-large;
+        border-radius: 10px 10px 0px 0px;
+        height: 4rem;
+        color: white;
+        word-wrap: wrap;
+
+    }
+
+    .c {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 100px;
+        border-radius: 10px;
+        word-wrap: break-word;
+        margin-bottom: 20px;
+        cursor: pointer;
+        width: 350px;
+        height: 4em;
+        padding: 10px 0px;
+        overflow: hidden;
+        color: rgb(255, 255, 255);
+    }
+
+    .next-button>button {
+        padding: 15px 150px;
+        background-color: #61677A;
+        border-radius: 5px;
+        color: white;
+        border: none;
+    }
+
+}

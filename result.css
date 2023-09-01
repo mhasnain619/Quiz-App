@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+.resultContainer {
+    background-color: lightgray;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultBox {
+    height: 80vh;
+    width: 50%;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #FFF6E0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+.yourResultsHeading {
+    color: white;
+    height: 3rem;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.yourResultsHeading>p {
+    margin: 0;
+}
+
+.Allquestions {
+    padding-top: 40px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.obtain-marks {
+    display: flex;
+}
+
+.remarks {
+    display: flex;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .resultBox {
+        height: 100vh;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        background-color: #FFF6E0;
+    }
+
+    p {
+        margin-bottom: 0px;
+        padding: 0;
+    }
+
+    .row-md {
+        border-bottom: 1px solid;
+        height: 2.5rem;
+    }
+
+}

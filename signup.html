@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <form class="form" id="form">
+        <div class="heading">
+            <p>Signup</p>
+        </div>
+        <div class="main-container">
+            <div class="inputs-container">
+                <div class="name-icon-input">
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="nameInput">
+                        <input class="name" id="userName" type="text" placeholder="Name">
+                    </div>
+                </div>
+                <div class="Email-icon-input">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="emailInput">
+                        <input class="email" id="email" type="email" placeholder="E-mail">
+                    </div>
+                </div>
+                <div class="password-icon-input">
+                    <div class="icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="passwordInput">
+                        <input class="password" id="password" type="password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="createAccount">
+                    <button class="createAccountBtn" type="submit">CREATE ACCOUNT</button>
+                </div>
+                <div class="allReadyAccount">
+                    <p>Already have an account? <a class="Signinlink" href="./index.html">Sign in</a> </p>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script type="module" src="signup.js"></script>
+</body>
+
+</html>

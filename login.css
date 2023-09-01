@@ -1,0 +1,133 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: lightgray;
+}
+
+/* <................Form...............> */
+
+.form {
+
+    /* border: 1px solid; */
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+
+
+    border-radius: 10px;
+    height: 70vh;
+    width: 40%;
+    background-color: #FFF6E0;
+
+}
+
+.heading p {
+    padding-top: 5px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.main-container {
+    margin-top: 40px;
+}
+
+.inputs-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* <................Email-icon-input-icon-input starts..............> */
+
+.Email-icon-input {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px 50px 10px 10px;
+    border: 2px solid gray;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 50px;
+    flex-direction: row;
+}
+
+.email {
+    border: none;
+    outline: none;
+    padding-left: 7px;
+
+    background-color: #FFF6E0;
+}
+
+/* <................Password-icon-input starts..............> */
+
+.password-icon-input {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px 50px 10px 10px;
+    border: 2px solid gray;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 50px;
+    flex-direction: row;
+}
+
+.password {
+    border: none;
+    /* width: 220px; */
+    outline: none;
+    padding-left: 7px;
+    background-color: #FFF6E0;
+
+}
+
+.loginAccountBtn {
+    padding: 10px 105px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+.allReadyAccount {
+    margin-top: 15px;
+}
+
+.Signuplink {
+    text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 100px; */
+        background-color: lightgray;
+    }
+
+    .form {
+        border: 1px solid;
+        /* height: 100vh; */
+        width: 100%;
+        background-color: #FFF6E0;
+
+    }
+
+}
