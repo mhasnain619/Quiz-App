@@ -30,7 +30,7 @@
     font-size: 24px;
     display: grid;
     place-items: center;
-    width: 350px;
+    width: 315px;
 }
 
 .typed {
@@ -91,7 +91,7 @@
     background-color: black;
     width: 100%;
     border-radius: 10px 10px 0px 0px;
-    height: 3rem;
+    height: 4rem;
     color: white;
     word-wrap: wrap;
 
